@@ -129,3 +129,36 @@
   'while':
     'prefix': 'wh'
     'body': 'while ($1) {\n\t$0\n}'
+  'pulic class':
+    'prefix': 'pc'
+    'body': 'public class $1 \n{\n\tpublic static void main(String[] args)\n  {\n\t   $0\n  }\n}'
+  'import scanner':
+    'prefix': 'is'
+    'body': 'import java.util.Scanner;'
+  'import random':
+    'prefix': 'ir'
+    'body': 'import java.util.Random;'
+  'import array':
+    'prefix': 'ia'
+    'body': 'import java.util.Arrays;'
+  'scanner in':
+    'prefix': 'si'
+    'body': 'Scanner in = new Scanner(System.in);'
+  'in next double':
+    'prefix': 'ind'
+    'body': 'in.nextDouble();'
+  'in next int':
+    'prefix': 'ini'
+    'body': 'in.nextInt();'
+  'in next':
+    'prefix': 'ine'
+    'body': 'in.next();'
+  'printf':
+    'prefix': 'pf'
+    'body': 'System.out.printf("$1",$2);'
+  'methods':
+    'prefix': 'nm'
+    'body': '${1:public} ${2:static} ${3:double} ${4:method}($5)\n{\n\t$0\n}'
+  'this':
+    'prefix': 'di'
+    'body': 'this'
